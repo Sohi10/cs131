@@ -1,0 +1,33 @@
+    1  ls
+    2  passwd
+    3  wget www.github.com
+    4  ls
+    5  exit
+    6  ls
+    7  man ls
+    8  ls
+    9  git clone https://github.com/Sohi10/cs131.git
+   10  ls
+   11  cd cs131
+   12  ls
+   13  mkdir ws1
+   14  ls
+   15  wget www.github.com
+   16  ls
+   17  rm index.html 
+   18  ls
+   19  cd ..
+   20  ls
+   21  wget www.github.com
+   22  ls
+   23  rm index.html
+   24  rm index.html.1 
+   25  ls
+   26  wget www.github.com
+   27  ls
+   28  cd cs131
+   29  c ws1
+   30  cd ws1
+   31  ls
+   32  History > cmds.log
+   33  history > cmds.log
