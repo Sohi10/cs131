@@ -1,0 +1,337 @@
+    1  ls
+    2  passwd
+    3  wget www.github.com
+    4  ls
+    5  exit
+    6  ls
+    7  man ls
+    8  ls
+    9  git clone https://github.com/Sohi10/cs131.git
+   10  ls
+   11  cd cs131
+   12  ls
+   13  mkdir ws1
+   14  ls
+   15  wget www.github.com
+   16  ls
+   17  rm index.html 
+   18  ls
+   19  cd ..
+   20  ls
+   21  wget www.github.com
+   22  ls
+   23  rm index.html
+   24  rm index.html.1 
+   25  ls
+   26  wget www.github.com
+   27  ls
+   28  cd cs131
+   29  c ws1
+   30  cd ws1
+   31  ls
+   32  History > cmds.log
+   33  history > cmds.log
+   34  ls
+   35  cat cmds.log 
+   36  git add cmds.log 
+   37  ls
+   38  cd..
+   39  ls
+   40  cd ..
+   41  ls
+   42  cd ..
+   43  ls
+   44  cd cs131
+   45  cd my-repo-name
+   46  hit status
+   47  cd ..
+   48  ls
+   49  cd131
+   50  cd cs131
+   51  cd ws1
+   52  cp cmds.log /home
+   53  cp cmds.log ~
+   54  cd ..
+   55  ls
+   56  rmdir cs131/
+   57  man rm
+   58  rmdir cs131/ -f
+   59  rmdir -f cs131/ 
+   60  rm cs131*
+   61  rm -r cs131/
+   62  ls
+   63  git remote add https://github.com/Sohi10/cs131.git
+   64  ls
+   65  git remote add cs131  https://github.com/Sohi10/cs131.git
+   66  git remote -v
+   67  git clone https://github.com/Sohi10/cs131.git
+   68  ls
+   69  cd cs131/
+   70  git init
+   71  git remote add https://github.com/Sohi10/cs131.git
+   72  ls
+   73  mkdir ws1
+   74  cd ..
+   75  cp cmds.log cs131/ws1/
+   76  cd cs131/ws1/
+   77  ls
+   78  cat cmds.log 
+   79  cd..
+   80  cd ..
+   81  git remote -v
+   82  git push cs131
+   83  git push -u https://github.com/Sohi10/cs131.git
+   84  .git/config
+   85  git push -u https://github.com/Sohi10/cs131.git
+   86  ls
+   87  git add ws1/
+   88  ls
+   89  cd ws1/
+   90  ls
+   91  cd..
+   92  cd ..
+   93  cd..
+   94  cd .
+   95  cd ..
+   96  ls
+   97  cd cs131/
+   98  git push -u https://github.com/Sohi10/cs131.git
+   99  git status
+  100  git add --all
+  101  git status
+  102  git commit
+  103   git config --global user.email "you@example.com"
+  104  git config --global user.email "jassasohi771@gmail.com"
+  105  git config --global user.name "Sohi10"
+  106  git commit
+  107  git push -u https://github.com/Sohi10/cs131.git
+  108  ls
+  109  cd ~
+  110  exit
+  111  history
+  112  ls
+  113  cd ..
+  114  ls
+  115  echo shell
+  116  shell -version
+  117  pwd
+  118  ls
+  119  ls *.html
+  120  ls ?.html
+  121  ls *
+  122  ls ?
+  123  ls *.txt
+  124  ls ?.txt
+  125  ls
+  126  tar tvf taxidata.tar.gz | grep xxx
+  127  cd cs131/ws2/
+  128  ls
+  129  cd ..
+  130  cp taxidata.tar.gz cs131/ws2/
+  131  cd cs131/ws2/
+  132  ls
+  133  tar zxvf taxidata.tar.gz 
+  134  ls
+  135  cd taxidata/
+  136  ls
+  137  cat 2019-01.csv 
+  138  clear
+  139  ls
+  140  head 2019-01.csv 
+  141  man grep
+  142  ls
+  143  head 2019-12.csv 
+  144  head 2019-03.csv 
+  145  tail 2019-03.csv 
+  146  pwd
+  147  clear
+  148  head 2019-03.csv 
+  149  man grep
+  150  man cat
+  151  man grep
+  152  head 2019-03.csv {3: "2019-03-12"}
+  153  grep '3: "2019-03-12"'
+  154  grep 2019-03.csv '3: "2019-03-12"'
+  155  grep '3: "2019-03-12"' 2019-03.csv 
+  156  ls
+  157  grep '3: "2019-03-12"' 2019-03.csv > log.txt
+  158  ls
+  159  vim log.txt 
+  160  grep '2: "2019-03-12"' 2019-03.csv > log.txt
+  161  ls
+  162  vim log.txt 
+  163  grep "2019-03-12" 2019-03.csv 
+  164  grep "2019-03-12" 2019-03.csv | wc -l
+  165  ls
+  166  -- group separator
+  167  man grep
+  168  grep '^([^,]*,\)\{2\}2019-03-12,' 2019-03.csv 
+  169  grep '^([^,]*,\)\{3\}2019-03-12,' 2019-03.csv 
+  170  grep '^([^,]*,\)\{1\}2019-03-12,' 2019-03.csv 
+  171  grep '^([^,]*,\)\{4\}2019-03-12,' 2019-03.csv 
+  172  grep '^,[^,]*[,][2019-03-12]^,'
+  173  grep '^,[^,]*[,][2019-03-12]^,' 2019-03.csv 
+  174  grep '^,[^,]*[,][2019-03-12,]' 2019-03.csv 
+  175  awk -f',' '$3 ~/2019-03-12/ {print $0} 2019-03.csv
+  176  ls
+  177  2.0,"2019-03-12 12:19:22.000000","2019-03-12 12:22:58.000000",1.0,0.83,1.0,N,                    237.0,263.0,1.0,5.0,0.5,0.5,1.76,0.0,0.3,10.56,2.5
+  178  grep "2019-03-12" 2019-03.csv | tail -10
+  179  grep "2019-03-12" 2019-03.csv | tail -10 > saved.txt
+  180  ls
+  181  vim saved.txt 
+  182  pwd
+  183  cp saved.txt jaspreet23fa/cs131/ws2/
+  184  history
+  185  cp saved.txt cs131/ws2/
+  186  cd ..
+  187  ls
+  188  cd taxidata/
+  189  pwd
+  190  cp saved.txt /mnt/scratch/jaspreet23fa/cs131/ws2/taxidata
+  191  cp saved.txt /mnt/scratch/jaspreet23fa/cs131/ws2/
+  192  ls
+  193  cd ..
+  194  git add saved.txt 
+  195  git commit 
+  196  git push -u https://github.com/Sohi10/cs131.git
+  197  awk -f\, '$3==2019-03-12' 201
+  198  cd taxidata/
+  199  awk -f\, '$3==2019-03-12' 2019-03.csv 
+  200  ls
+  201  awk -f\, '$3==2019-03-12' 2019-03.csv 
+  202  ls
+  203  cd ..
+  204  ls
+  205  rm -r taxidata
+  206  ls
+  207  cd ..
+  208  ls
+  209  cd ..ls
+  210  ls
+  211  cd ws2
+  212  ls
+  213  rm *
+  214  ls
+  215  cd ..
+  216  git status
+  217  git add/rm saved.txt
+  218  git add/rm 
+  219  git add
+  220  man git add
+  221  git commit
+  222  git commit -a
+  223  git push -u https://github.com/Sohi10/cs131.git
+  224  ls
+  225  grep -v
+  226  grep -version
+  227  grep --version
+  228  ls
+  229  exit
+  230  ls
+  231  cd cs131
+  232  ls
+  233  cat README.md 
+  234  cd ..
+  235  ls
+  236  tar -xvjf taxidata.tar.gz
+  237  history
+  238  tar zxvf taxidata.tar.gz 
+  239  ls
+  240  cd taxidata/
+  241  ls
+  242  awk "Begin{FS=","} {print $3}' 2019-10.csv | tail -20 > no.txt
+  243  ls
+  244  awk "Begin{FS=","} {print $3}' 2019-10.csv |tail -10
+  245  awk 'Begin{FS=","} {print $3}' 2019-10.csv |tail -10
+  246  exit
+  247  history
+  248  ls
+  249  cd ..
+  250  ls
+  251  rm taxidata/*
+  252  ls
+  253  rm taxidata
+  254  rmdir taxidata
+  255  rm taxidata.tar.gz 
+  256  ls
+  257  history exit
+  258  exit
+  259  ls
+  260  history
+  261  cp /datasets/taxidata.tar.gz 
+  262  cp /datasets/taxidata.tar.gz
+  263  cp /datasets/taxidata.tar.gz /jaspreet23fa
+  264  pwd
+  265  cp /datasets/taxidata.tar.gz /jaspreet23fa/
+  266  cp /datasets/taxidata.tar.gz /jaspreet23fa/mkdir data
+  267  ls
+  268  cd cs131/
+  269  mkdir data/
+  270  ls
+  271  cd ..
+  272  cd data
+  273  ls
+  274  cd cs131/
+  275  rmdir dara
+  276  rmdir data
+  277  cd ..
+  278  mkdir data/
+  279  ls
+  280  cd data/
+  281  cp /datasets/taxidata.tar.gz
+  282  cp /datasets/taxidata.tar.gz /data/
+  283  pwd
+  284  cd ..
+  285  cp /datasets/taxidata.tar.gz /data/
+  286  cp /datasets/taxidata.tar.gz data/
+  287  ls
+  288  cd data/
+  289  ls
+  290  tar zxvf taxidata.tar.gz 
+  291  ls
+  292  cd taxidata/
+  293  ls
+  294  cd ..
+  295  99  awk -f\, '$3==2019-03-12' 2019-03.csv
+  296  99  awk -f\, '$3==2019-03-12' taxidata/* >> resultall.txt 
+  297  ls
+  298  cat resultall.txt 
+  299  rm resultall.txt 
+  300  ls
+  301  cd taxidata/
+  302  ls
+  303  99  awk -f\, '$3==2019-03-12' *.csv >> resultall.txt 
+  304  99  awk -f\, '$3==2019-03-12' taxidata/*.csv > resultall.txt 
+  305  99  awk -f\, '$3==2019-03-12' taxidata/* > resultall.txt 
+  306  99  awk -f\, '$3==2019-03-12' taxidata/ > resultall.txt 
+  307  99  awk -f\, '$3==2019-03-12' taxidata/.csv > resultall.txt 
+  308  99  awk -f\, '$3==2019-03-12' /*.csv > resultall.txt 
+  309  99  awk -f\, '$3==2019-03-12' 2019-01.csv 2019-02.csv 2019-03.csv 2019-04.csv 2019-05.csv 2019-06.csv 2019-07.csv 2019-08.csv 2019-09.csv 2019-10.csv 2019-11.csv 2019-12.csv > resultall.txt 
+  310  99  awk -F, '$3==2019-03-12' 2019-01.csv 2019-02.csv 2019-03.csv 2019-04.csv 2019-05.csv 2019-06.csv 2019-07.csv 2019-08.csv 2019-09.csv 2019-10.csv 2019-11.csv 2019-12.csv > resultall.txt 
+  311  99  awk -F, '$3 ~ /2019-03-12/' taxi > resultall.txt
+  312  99  awk -F, '$3 ~ /2019-03-12/' 2019-03.csv > resultall.txt
+  313  awk -F, '$3 ~ /2019-03-12/' 2019-03.csv > resultall.txt
+  314  ls
+  315  pager resultall.txt 
+  316  vim resultall.txt 
+  317  wc -l resultall.txt 
+  318  wc -l 2019-03.csv 
+  319  vim resultall.txt 
+  320  awk -F, '$3 ~ /2019-03-12/' /*.csv > resultall.txt
+  321  awk -F, '$3 ~ /2019-03-12/' taxidata/*.csv > resultall.txt
+  322  awk -F, '$3 ~ /2019-03-12/' *.csv > resultall.txt
+  323  wc -l resultall.txt 
+  324  awk -F, '$3 ~ /2019-03-12/' *.csv | wc -l >> resultall.txt
+  325  vim resultall.txt 
+  326  ls
+  327  tail resultall.txt 
+  328  rm resultall.txt 
+  329  ls
+  330  awk -F, '$3 ~ /2019-03-12/' *.csv | tail -20 > result.txt
+  331  ls
+  332  vim result.txt 
+  333  wc -l result.txt 
+  334  awk -F, '$3 ~ /2019-03-12/' *.csv | wc -l >> result.txt
+  335  ls
+  336  vim result.txt 
+  337  history > cmds.log
