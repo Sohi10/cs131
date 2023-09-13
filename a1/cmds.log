@@ -1,0 +1,59 @@
+  593  cd cs131/
+  594  mkdir a1
+  595  echo $HOME
+  596  less /etc/group
+  597  cd a1/
+  598  mkdir temp
+  599  chmod -x temp/
+  600  cd temp/
+  601  ls temp/
+  602  ls -l temp/
+  603  touch temp/new.txt 
+  604  mkdir temp2
+  605  man cp
+  606  mv temp2/ temp3/
+  607  ls
+  608  cp -R temp3 temp2/
+  609  ls
+  610  cd temp2/
+  611  ls
+  612  cd ..
+  613  ls temp3/
+  614  cp -R /temp3 /temp2
+  615  cp -R temp3 /temp2/
+  616  cp -R temp3 temp2/
+  617  ls
+  618  cd temp2
+  619  ls
+  620  cd ..
+  621  ls
+  622  ls /proc/
+  623  head /proc/meminfo 
+  624  head /proc/cpuinfo 
+  625  tail /proc/cpuinfo 
+  626  ls /etc/
+  627  cat /etc/os-release 
+  628  ls -l /etc/os-release 
+  629  vim a1.txt 
+  630  ls -a
+  631  rm .a1.txt.swp 
+  632  vim a1.txt 
+  633  ls -a
+  634  vim a1.txt 
+  635  ls -a
+  636  ls
+  637  vim a1.txt 
+  638  less a1.txt 
+  639  vim a1.txt 
+  640  cat a1.txt 
+  641  vim a1.txt history
+  642  ls -a
+  643  ls
+  644  cp a1.txt cs131/a1/
+  645  cd cs131/
+  646  ls
+  647  history
+  648  history | tail -56
+  649  History
+  650  history
+  651  history | tail -59 > cmds.log
