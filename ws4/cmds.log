@@ -1,0 +1,55 @@
+   15  history
+   16  cd
+   17  vim .bash_profile 
+   18  l
+   19  w
+   20  clear
+   21  cd cs131/
+   22  ls
+   23  mkdir ws4
+   24  cd ws4
+   25  ls
+   35  awk -F, '$8 ~ /^170.0/' ~/data/taxidata/2019-06.csv | awk -F, '$9 ~ /^80.0/' | cut -d, -f11 > FARE-170.0-80.0.txt
+   38  cat FARE-170.0-80.0.txt | wc -l
+   39  awk -F, '$8 ~ /^50.0/' ~/data/taxidata/2019-06.csv | awk -F, '$9 ~ /^90.0/' | cut -d, -f11 > FARE-50.0-90.0.txt
+   40  less FARE-50.0-90.0.txt 
+   41  cat FARE-50.0-90.0.txt | wc -l
+   42  awk -F, '$8 ~ /^50.0/' ~/data/taxidata/2019-06.csv | awk -F, '$9 ~ /^90.0/'  > FARE-50.0-90.0.csv
+   43  less FARE-50.0-90.0.csv 
+   44  tail FARE-50.0-90.0.csv 
+   45  clear
+   46  ls
+   47  cat FARE-50.0-90.0.csv | wc -l
+   48  cat FARE-50.0-90.0.txt | wc -l
+   49  clear
+   50  ls 
+   51  cp ~/ws4.txt ./
+   52  ls
+   53  cat ws4.txt 
+   54  clear
+   55  paste -sd "+" FARE-170.0-80.0.txt > FARE_170.0-80.0.txt
+   56  paste -sd "+" FARE-50.0-90.0.txt > FARE_50.0-90.0.txt
+   57  ls
+   58  cat FARE_170.0-80.0.txt 
+   59  vim FARE_170.0-80.0.txt 
+   60  vim FARE_50.0-90.0.txt 
+   61  ls
+   62  cat FARE-50.0-90.0.txt | wc -l
+   63  clear
+   64  cat FARE_170.0-80.0.txt | bc
+   65  cat FARE_170.0-80.0.txt | bc >> FARE-170.0-80.0.txt 
+   66  cat FARE-170.0-80.0.txt 
+   67  vim FARE-170.0-80.0.txt 
+   68  cat FARE_50.0-90.0.txt | bc >> FARE-50.0-90.0.txt 
+   69  vim FARE-50.0-90.0.txt 
+   70  clear
+   71  ls
+   72  rm FARE-50.0-90.0.csv 
+   73  ls
+   74  cat FARE_170.0-80.0.txt | bc >> ws4.txt 
+   75  cat FARE_50.0-90.0.txt | bc >> ws4.txt
+   76  cat ws4.txt 
+   77  vim ws4.txt 
+   78  cat ws4.txt 
+   79  history
+   80  history > cmds.log
