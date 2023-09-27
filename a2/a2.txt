@@ -1,0 +1,85 @@
+Script started on 2023-09-27 00:44:13-04:00
+bash-4.4$ [Kbash-4.4$ jj[K[Kawk -F [K, '$2 ~ /2019-05-11/' 2019-05.csv |cut cut[C[C[C-[K -d[Kf117[K[K7 -d,|[1P[C[C[C[C[C[C[C[C[C[C[C[C[Cpaste -sd "+" > [K[K[C| bc > sum.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+bash-4.4$ cat sum.txt 
+4509482.36
+bash-4.4$ cat sum.txt [C[C[C[C[C[C[C[C[C[Cawk -F, '$2 ~ /2019-05-11/' 2019-05.csv |cut -f17 -d,|paste -sd "+" | bc > sum.txt[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K wc -l >> sum.txt
+bash-4.4$ cat sum.txt 
+4509482.36
+252413
+
+TASK 1:
+
+bash-4.4$ paste -sd "/'[K" sum.txt | bc -l
+17.86549171397669692131
+
+
+bash-4.4$ 
+bash-4.4$ 
+bash-4.4$ 
+bash-4.4$ paste -sd "/" sum.txt | bc -l[C[C[C[C[C[C[C[C[C[C[17Pcat sum.txt [C[C[C[C[C[C[C[C[C[Cawk -F, '$2 ~ /2019-05-11/' 2019-05.csv |cut -f17 -d,| wc -l >> sum.txt[C[C[C[C[C[C[C[C[C[Ccat sum.txt [K[C[C[C[C[C[C[C[C[C[Cawk -F, '$2 ~ /2019-05-11/' 2019-05.csv |cut -f17 -d,|paste -sd "+" | bc > sum.txt[C[C[C[C[C[C[C[C[C[Ccat sum.txt [K[C[C[C[C[C[C[C[C[C[Cawk -F, '$2 ~ /2019-05-11/' 2019-05.csv |cut -f17 -d,| wc -l >> sum.txt[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K> >[C sort -n[1P[1P[1@|[C[C[C[C[C[C[C | uniq -c |sort -nr  |t[Khead -1
+   5440 9.8
+bash-4.4$ awk -F, '$2 ~ /2019-05-11/' 2019-05.csv |cut -f17 -d, |sort -n | uniq -c |sort -nr ||head -1[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csort -nr |h[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csort -nr |he[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csort -nr |hea[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csort -nr |head[1P -1[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csort -nr |head [1P-1[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csort -nr |head -[1P1[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csort -nr |head -1[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csort -nr |head -1 [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+TASK 2:
+
+1309.8
+
+
+bash-4.4$ 
+bash-4.4$ 
+bash-4.4$ 
+bash-4.4$ awk -F, '$9 ~[C[1@-[1@e[1P[1P[C[C[C[C[C[C[C[C /[3-9]/' 2019-05.csv | cut -f[C[C[1P[1@4[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C9 -d, | sort -n | [Kuniq -c | [Ksort -nr |head -10
+bash: head-10: command not found
+^[[A^[[A^[[B^[[B^C
+
+
+TASK 3:
+ 
+bash-4.4$ awk -F, '$4 ~ /[3-9]/' 2019-05.csv | cut -f9 -d, | sort -n |uniq -c |sort -nr |head--10 -10[C
+  39909 236.0
+  37140 237.0
+  36990 161.0
+  33678 230.0
+  28506 170.0
+  27895 162.0
+  27485 48.0
+  26782 142.0
+  25051 239.0
+  24609 234.0
+
+
+bash-4.4$ 
+bash-4.4$ 
+bash-4.4$ 
+
+
+bash-4.4$ awk -F, '$8 ~[K[K[K[K[K[K[K[K[K[K[K[K[Kexit
+
+
+
+bash-4.4$ fgjobsecho $?bg[Kcut -f8 -d, ./*.csv |sort -n | uniq -c |sort -nr |head -1[C[C[C[C[C[C[C[C[C[Cls[Kcut -f8 -d, ./*.csv |sort -n | uniq -c |sort -nr |head -1[C[C[C[C[C[C[C[C[C[Cls[Kawk -F, '$2 ~ /2019-05-20/' 2019-05.csv | awk -F, '$8 ~ /237.0/' | cut -f9 -d, | sorrt -n | uniq -c | sort -nr | head -1[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccut -f8 -d, | sort -n | uniq -c | sort -nr | head -1[K[Ad[K
+[K[A[C[C[C[C[C[C[C[C[C[C[Cawk -F, '$2 ~ /2019-05-20/' 2019-05.csv | cut -f8 -d, | sort -n | uniq -c | sort -nrr | head -1
+  12002 237.0
+bash-4.4$ awk -F, '$2 ~ /2019-05-20/' 2019-05.csv | cut -f8 -d, | sort -n | uniq -c | sort -nrr | head -1[Afg[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[Cjobsecho $?bg[Kcut -f8 -d, ./*.csv |sort -n | uniq -c |sort -nr |head -1[C[C[C[C[C[C[C[C[C[Cls[Kawk -F, '$2 ~ /2019-05-20/' 2019-05.csv | awk -F, '$8 ~ /237.0/' | cut -f9 -d, | sorrt -n | uniq -c | sort -nr | head -1[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccut -f8 -d, | sort -n | uniq -c | sort -nr | head -1[K[Ad[K
+[K[A[C[C[C[C[C[C[C[C[C[C[Cawk -F, '$2 ~ /2019-05-20/' 2019-05.csv | cut -f8 -d, | sort -n | uniq -c | sort -nrr | head -1[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cawk -F, '$8 ~ /237.0/' | cut -f9 -d, | sor[25@t -n | uniq -c | sort -nr[C[C[C[C[C[C[C[C[C[C
+
+TASK 4:
+   1911 236.0
+
+
+bash-4.4$ awk -F, '$2 ~ /2019-05-20/' 2019-05.csv | awk -F, '$8 ~ /237.0/' | cut -f9 -d, | sorrt -n | uniq -c | sort -nr | head -1[A[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C
+bash-4.4$ 
+bash-4.4$ 
+bash-4.4$ 
+bash-4.4$ awk -F, '$2 ~ /2019-05-20/' 2019-05.csv | awk -F, '$8 ~ /237.0/' | cut -f9 -d, | sorrt -n | uniq -c | sort -nr | head -1[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccut -f8 -d, | sort -n | uniq -c | sort -nr | head -1[K[Afg[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[Cjobsecho $?bg[Kcut -f8 -d, ./*.csv |sort -n | uniq -c |sort -nr |head -1[C[C[C[C[C[C[C[C[C[Cls[Kcut -f8 -d, ./*.csv |sort -n | uniq -c |sort -nr |head -1[1P[1P[1P[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+TASK 5:
+3641682 237.0
+
+bash-4.4$ exit
+
+Script done on 2023-09-27 01:58:02-04:00

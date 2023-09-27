@@ -1,0 +1,71 @@
+  973  script cs131/a2/a2.txt
+
+TASK1:
+
+  974  awk -F, '$2 ~ /2019-05-11/' 2019-05.csv |cut -f17 -d,|paste -sd "+" | bc > sum.txt
+  975  cat sum.txt 
+  976  awk -F, '$2 ~ /2019-05-11/' 2019-05.csv |cut -f17 -d,| wc -l >> sum.txt
+  977  cat sum.txt 
+  978  paste -sd "/" sum.txt | bc -l
+
+TASK 2:
+
+  979  awk -F, '$2 ~ /2019-05-11/' 2019-05.csv |cut -f17 -d, |sort -n | uniq -c |sort -nr |head -1
+  980  awk -F, '$2 ~ /2019-05-11/' 2019-05.csv |cut -f17 -d, |sort -nr |head -1
+
+TASK 3:
+
+  981  awk -F, '$4 ~ /[3-9]/' 2019-05.csv | cut -f9 -d, | sort -n |uniq -c |sort -nr |head-10
+  982  awk -F, '$4 ~ /[3-9]/' 2019-05.csv | cut -f9 -d, | sort -n |uniq -c |sort -nr |head -10
+
+
+
+  987  awk -F, '$8 ~ /2019-05-20/' 2019-05.csv | cut -F 
+  988  head -1 2019-05.csv 
+  989  awk -F, '$8 ~ /2019-05-20/' 2019-05.csv | cut -F8 -d, | sort -n | uniq -c | sort -nr
+  990  awk -F, '$8 ~ /2019-05-20/' 2019-05.csv | cut -f8 -d, | sort -n | uniq -c | sort -nr
+  991  echo $?
+  992  awk -F, '$8 ~ /2019-05-20/' 2019-05.csv | cut -f8 -d, | sort -n | uniq -c |
+  993  awk -F, '$2 ~ /2019-05-20/' 2019-05.csv | cut -f8 -d, | sort -n | uniq -c | sort -nr | head -10
+  994  awk -F, '$2 ~ /2019-05-20/' 2019-05.csv | awk -F, '$8 ~ /237.0/' | cut -f9 -d, | sort -n | uniq -c | sort -nr
+  995  awk -F, '$2 ~ /2019-05-20/' 2019-05.csv | awk -F, '$8 ~ /237.0/' | cut -f9 -d, | sort -n | uniq -c | sort -nr | head -1
+  996  clear
+  997  script >> a2.txxt
+ 
+
+
+
+
+ 998  adaexasdsaex
+  999  d
+ 1000  ls
+ 1001  cd data/taxidata/
+ 1002  ls
+ 1003  cat a2.txxt 
+ 1004  clear
+ 1005  script newa2.txt
+ 1006  l
+ 1007  ls
+ 1008  cat newa2.txt 
+ 1009  clear
+ 1010  ls
+ 1011  rm a2.txxt sum.txt newa2.txt typescript new.txt 
+ 1012  ls
+ 1013  cut -f8, -d, . | head -10
+ 1014  cut -d, -f8  . | head -10
+ 1015  cut -d, -f8  ./* | head -10
+ 1016  cut -d, -f8  ./* | wc -l
+ 1017  cut -d, -f8  ./* | sort -n | uniq -c | sort -nr
+ 1018  clear
+ 1019  ls
+ 1020  script ~/cs131/a2new.txt
+ 1021  cd ~/cs131/
+ 1022  ls
+ 1023  cat a2new.txt 
+ 1024  vim a2new.txt 
+ 1025  cat a2new.txt 
+ 1026  clear
+ 1027  cat a2new.txt 
+ 1028  cat a2new.txt >> ~/cs131/a2/a2.txt 
+ 1029  cd a2/
+ 1030  ls
