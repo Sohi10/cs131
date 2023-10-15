@@ -1,0 +1,12 @@
+    7  mkdir ~/cs131/ws6/
+    9  ls
+   10  sed -n '/^2.0,}*/ p' 2019-11.csv > vendor2.csv
+   11  wc vendor2.csv > ws6.txt
+   13  sed -e 's/://g' -e 's/"//g' -e 's/-//g' 2019-11.csv > no-separators.csv
+   43  sed -E 's/\.[0-9]*//g' no-separators.csv > no-fractions.csv 
+   45  ls
+   74  head -10 no-separators.csv >> ws6.txt 
+   75  head -10 no-fractions.csv >> ws6.txt 
+   76  cat ws6.txt 
+   77  clear
+   83  history 10 >> cmnd.log 
