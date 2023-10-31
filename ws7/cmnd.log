@@ -1,0 +1,7 @@
+    9  awk -F, '$17 >= 10.0 { print $14 }' 2019-11.csv | sort -nr | uniq -c | sort -nr | head -10
+   10  clear
+   11  awk -F, '$17 >= 10.0 { print $14 }' 2019-11.csv | sort -nr | uniq -c | sort -nr > results.txt
+   12  less results.txt 
+   13  head -20 results.txt > ws7.txt
+   14  less ws7.txt 
+   15  history > cmnd.log
