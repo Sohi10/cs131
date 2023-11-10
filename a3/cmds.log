@@ -1,0 +1,20 @@
+   11  awk -f average.awk ~/data/taxidata/2019-08.csv > results.txt
+   12  less results.txt 
+   13  awk ' { t = $1; $1 = $2; $2 = t; print; } ' results.txt > IDfirst.txt
+   14  less IDfirst.txt 
+   15  sort -nr IDfirst.txt > results.txt 
+   16  less results.txt 
+   17  awk ' { t = $1; $1 = $2; $2 = t; print; } ' results.txt | head -10 > a3.txt
+   18  less a3.txt 
+   19  history > cmds.log
+   11  awk -f pair.awk ~/data/taxidata/2019-08.csv > results.txt
+   12  less results.txt 
+   13  awk ' { t = $1; $1 = $2; $2 = t; print; } ' results.txt > averagefirst.txt
+   14  less averagefirst.txt 
+   15  sort -nr averagefirst.txt > results.txt 
+   16  less results.txt 
+   17  awk ' { t = $1; $1 = $2; $2 = t; print; } ' results.txt | head -1 >> a3.txt
+   18  cat a3.txt 
+   19  clear
+   20  ls
+   21  history >> cmds.log 
